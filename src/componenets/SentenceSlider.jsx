@@ -1,12 +1,12 @@
-function WordsSlider({value, onChange}) {
+function SentenceSlider({value, onChange}) {
 
   return (
     <>
-      <h3>Words per Paragraph: {value}</h3>
+      <h3>Sentences per Paragraph: {value}</h3>
       <input
         type="range"
         min={1}
-        max={100}
+        max={10}
         value={value}
         onChange={(e) => onChange(e.target.value)}
       />
@@ -14,4 +14,4 @@ function WordsSlider({value, onChange}) {
   )
 }
 
-export default WordsSlider;
+export default SentenceSlider;
