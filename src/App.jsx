@@ -1,12 +1,9 @@
-import Content from "./componenets/Content"
+import Generator from "./componenets/Generator"
 
 function App() {
 
   return (
-    <>
-      <h1>Lorem Ipsum Generator</h1>
-      <Content/>
-    </>
+      <Generator/>
   )
 }
 

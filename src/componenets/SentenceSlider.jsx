@@ -1,7 +1,7 @@
 function SentenceSlider({value, onChange}) {
 
   return (
-    <>
+    <div className="sentence-slider">
       <h3>Sentences per Paragraph: {value}</h3>
       <input
         type="range"
@@ -10,7 +10,7 @@ function SentenceSlider({value, onChange}) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
       />
-    </>
+    </div>
   )
 }
 

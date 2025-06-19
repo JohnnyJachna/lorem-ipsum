@@ -1,7 +1,8 @@
 function TagSelection({onChange}) {
   return (
-    <>
-      <label htmlFor="tagSelection">Tag: </label>
+    <div className="tag-selection">
+      <h3>Tag: </h3>
+      <label htmlFor="tagSelection" hidden>Tag: </label>
       <select 
         name="tag selection" 
         id="tagSelection"
@@ -16,7 +17,7 @@ function TagSelection({onChange}) {
         <option value="h5">h5</option>
         <option value="h6">h5</option>
       </select>
-    </>
+    </div>
   )
 }
 

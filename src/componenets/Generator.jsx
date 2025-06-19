@@ -37,14 +37,15 @@ function Content() {
   }
 
   return (
-    <>
+    <div className="generator">
+      <h1>Lorem Ipsum Generator</h1>
       <ParagraphSlider value={paragraphSliderValue} onChange={handleParagraphValue}/>
       <SentenceSlider value={sentenceSliderValue} onChange={handleWordValue}/>
       <IncludeSelection value={includeSelectionValue} onChange={(handleIncludeSelection)}/>
       <TagSelection onChange={handleTagSelection}/>
       {/* <GeneratorButton onClick={handleClick}/> */}
       <TextOutput words={sentenceSliderValue} paragraphs={paragraphSliderValue} tag={tagSelectionValue} include={includeSelectionValue}/>
-    </>
+    </div>
   )
 }
 
